@@ -14,5 +14,8 @@
     "ts-node": "^8.10.2",
     "tslint": "^6.1.2",
     "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "@google-cloud/tasks": "^2.1.0"
   }
 }
