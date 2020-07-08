@@ -18,4 +18,6 @@ const request: RequestObj = {
 
 const date = new Date("2020-07-07T18:47:00")
 
-s.schedule({ date, request })
+const id = await s.schedule({ date, request })
+
+console.log(id)

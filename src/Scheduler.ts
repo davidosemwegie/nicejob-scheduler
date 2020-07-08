@@ -47,11 +47,11 @@ class Scheduler {
       parent: this.parent,
       task,
     }
-    const response = await client
-      .createTask(req)
-      .then((res) => console.log(res))
-      .catch((error) => console.log(error))
-    //console.log(`Created task ${response.name}`)
+    const [response] = await client.createTask(req)
+    const name = response.name
+    const id = name.split("/").pop()
+
+    return await id
   }
 
   /** delete function */
