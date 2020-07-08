@@ -1,5 +1,5 @@
 {
-  "name": "@nicejob/nicejob-scheduler",
+  "name": "nicejob-scheduler",
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
@@ -14,15 +14,15 @@
     "ts-node": "^8.10.2",
     "tslint": "^6.1.2",
     "typescript": "^3.9.6",
-    "@types/node": "^14.0.19"
-  },
-  "dependencies": {
+    "@types/node": "^14.0.19",
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-typescript": "^7.10.4",
-    "@google-cloud/tasks": "^2.1.0",
-    "@types/jest": "^26.0.4",
     "babel-jest": "^26.1.0",
+    "@types/jest": "^26.0.4",
     "jest": "^26.1.0"
+  },
+  "dependencies": {
+    "@google-cloud/tasks": "^2.1.0"
   }
 }
