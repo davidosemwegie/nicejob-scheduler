@@ -65,6 +65,9 @@ class Scheduler {
         httpMethod: request.method || "POST",
         url: request.url,
         body: request.body || null,
+        headers: request.headers || {
+          contentType: "application/json",
+        },
       },
       scheduleTime: {
         seconds,
