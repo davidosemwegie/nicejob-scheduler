@@ -64,15 +64,16 @@ class Scheduler {
       httpRequest: {
         httpMethod: request.method || "POST",
         url: request.url,
-        body: request.body || null,
-        headers: request.headers || {
-          contentType: "application/json",
-        },
+        body: request.body ? request.body : null,
+        headers: request.headers
+          ? request.headers
+          : { contentType: "application/json" },
       },
       scheduleTime: {
         seconds,
       },
     }
+
     console.log("Sending task:")
     console.log(task)
     const req = {
